@@ -1,9 +1,33 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/gc5EIubW)
 # Machine Learning Beginner Project: Linear Regression
 ### Project Title: Predicting House Prices Using Linear Regression
 
 **Objective:** To introduce students to supervised learning, focusing on linear regression, by guiding them through a project that predicts house prices based on a variety of features.
 
 **Dataset:** We'll use the "Boston Housing Dataset" from the UCI Machine Learning Repository. This dataset contains information about housing in Boston, including features such as the number of rooms, age of the house, and crime rate, along with the target variable, which is the median value of owner-occupied homes.
+
+
+### Results
+
+
+| Method               | RMSE | R² Score |
+|----------------------|------|----------|
+| Basic Linear Model   | 3.47 | 0.75     |
+| With Feature Engg.   | 2.95 | 0.82     |
+
+
+
+## Setup Instructions
+
+
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run scripts
+python scripts/data_preprocessing.py
+python scripts/train_model.py
+python scripts/evaluate_model.py
+
 
 ### Project Structure:
 
@@ -27,7 +51,10 @@
 
 │   ├── Model_Training.ipynb
 
-│   └── Model_Evaluation.ipynb
+│   ├── Model_Evaluation.ipynb
+
+│   └── Feature_Engineering.ipynb
+
 
 ├── scripts
 
