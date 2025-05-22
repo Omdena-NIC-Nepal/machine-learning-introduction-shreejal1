@@ -6,6 +6,29 @@
 
 **Dataset:** We'll use the "Boston Housing Dataset" from the UCI Machine Learning Repository. This dataset contains information about housing in Boston, including features such as the number of rooms, age of the house, and crime rate, along with the target variable, which is the median value of owner-occupied homes.
 
+
+### Results
+
+
+| Method               | RMSE | R² Score |
+|----------------------|------|----------|
+| Basic Linear Model   | 3.47 | 0.75     |
+| With Feature Engg.   | 2.95 | 0.82     |
+
+
+
+## Setup Instructions
+
+
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Run scripts
+python scripts/data_preprocessing.py
+python scripts/train_model.py
+python scripts/evaluate_model.py
+
+
 ### Project Structure:
 
 - Data Exploration and Preprocessing
@@ -28,7 +51,10 @@
 
 │   ├── Model_Training.ipynb
 
-│   └── Model_Evaluation.ipynb
+│   ├── Model_Evaluation.ipynb
+
+│   └── Feature_Engineering.ipynb
+
 
 ├── scripts
 
